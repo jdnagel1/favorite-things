@@ -1,29 +1,4 @@
-// $(document).ready(function() {
-//   $("#favThings").submit(function(event) {
-//
-//     event.preventDefault();
-//     var name = $("input#name").val();
-//     var food = $("input#food").val();
-//     var music = $("input#music").val();
-//     var spiritAnimal = $("input#spiritAnimal").val();
-//     var movie = $("input#movie").val();
-//
-//     var array = [name, food, music, spiritAnimal, movie];
-//
-//     $(".name").text(nameInput);
-//     $(".food").text(foodInput);
-//     $(".music").text(musicInput);
-//     $(".spiritAnimal").text(spiritAnimalInput);
-//     $(".movie").text(movieInput);
-//
-//
-//     $("#array").show();
-//
-//
-//
-// });
-//
-// });
+
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     var favThings = ["name", "food", "music", "spiritAnimal", "movie"];
@@ -32,7 +7,23 @@ $(document).ready(function() {
       $("." + hi).text(userInput);
     });
 
+    things = [$("#name").val(), $("#food").val(), $("#music").val() ,$("#spiritAnimal").val() ,$("#movie").val()];
     $(".story").show();
+
+    // console.log(things);
+    // things.forEach
+    //   $("#fig0").append("<li>" + $("#name").val() + "</li>");
+    //   $("#fig0").append("<li>" + $("#food").val() + "</li>");
+    //   $("#fig0").append("<li>" + $("#music").val() + "</li>");
+    //   $("#fig0").append("<li>" + $("#spiritAnimal").val() + "</li>");
+    //   $("#fig0").append("<li>" + $("#movie").val() + "</li>");
+
+    var array2 = [];
+    array2.push(things[0], things[1], things[2]);
+    $("#answer1").text("We also love " + array2[0]);
+    $("#answer2").text("We also love " + array2[1]);
+    $("#answer3").text("We also love " + array2[2]);
+
 
     event.preventDefault();
   });
