@@ -11,29 +11,44 @@
 <body>
   <div class="container">
     <h1>Guess Reese's Favorite Things!</h1>
-    <form>
+    <form id="formOne">
       <div class="form-group">
-        <label for="name">Name</label>
-        <textarea class="form-control" id="name" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="food">What's Reese's favorite food?</label>
-        <textarea class="form-control" id="food" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="music">What's Reese's favorite music genre?</label>
-        <textarea class="form-control" id="music" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="spiritAnimal">What's Reese's spirit animal?</label>
-        <textarea class="form-control" id="spiritAnimal" rows="3"></textarea>
-      </div>
-      <div class="form-group">
-        <label for="movie">What's Reese's favorite movie?</label>
-        <textarea class="form-control" id="movie" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+        <div class="favThings">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" placeholder="(name)" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="food">What's Reese's favorite food?</label>
+            <input id="food" placeholder="(food)" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="music">What's Reese's favorite nusic genre?</label>
+            <input id="music" placeholder="(music)" class="form-control">
+          </div>
+         <div class="form-group">
+            <label for="spiritAnimal">What's Reese's spirit animal?</label>
+            <input id="spiritAnimal" placeholder="(spirit animal)" class="form-control">
+          </div>
+            <div class="form-group">
+              <label for="movie">What's Reese's favorite movie?</label>
+              <input id="movie" placeholder="(movie)" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+    <div class="story">
+      <p>Array will show here:
+        1.<span class="name"></span>
+        2.<span class="food"></span>
+        3.<span class="music"></span>
+        4.<span class="spiritAnimal"></span>
+        5.<span class="movie"></span>
+      </p>
+    </div>
+
+
   </div>
 </body>
 </html>
